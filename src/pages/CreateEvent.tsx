@@ -1,3 +1,9 @@
+import { Header } from "../components/header/Header"
+
 export const CreateEvents = () => {
-    return <h1>Criar evento</h1>
+    return (
+        <div>
+            <Header/>
+        </div>
+    )
 }

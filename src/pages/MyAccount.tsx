@@ -1,3 +1,9 @@
+import { Header } from "../components/header/Header"
+
 export const MyAccount = () => {
-    return <h1>Minha conta</h1>
+    return (
+        <div>
+            <Header />
+        </div>
+    )
 }
