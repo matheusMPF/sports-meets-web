@@ -4,6 +4,7 @@ export const MyAccount = () => {
     return (
         <div>
             <Header />
+            <span>Minha conta</span>
         </div>
     )
 }

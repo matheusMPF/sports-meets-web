@@ -1,13 +1,22 @@
+import { Card } from "../components/card/Card"
 import { Header } from "../components/header/Header"
-import { Main } from "../components/main/Main"
 
 
 export const Home = () => {
     return (
+
         <div>
+
             <Header />
-            <Main />
+
+            <main className="flex flex-wrap items-center justify-center gap-5">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+            </main>
         </div>
+
 
     )
 }

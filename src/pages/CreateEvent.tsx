@@ -4,6 +4,7 @@ export const CreateEvents = () => {
     return (
         <div>
             <Header/>
+            <span>Criar evento</span>
         </div>
     )
 }
