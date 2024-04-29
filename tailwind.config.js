@@ -5,9 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'main-100': '#3b82f6',
+        'background-100': '#27272a',
+        'background-200': '#18181b',
+  
+      }
+    },
+    
   },
   plugins:
     ['tailwindcss-pseudo-elements'
-  ],
+    ],
 }
