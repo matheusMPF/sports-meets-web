@@ -11,8 +11,8 @@ export default function RouterPages(){
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/create-event" element={ <CreateEvents/> } />
-        <Route path="/my-account" element={ <MyAccount/> } />
         <Route path="/event-room" element={ <EventRoom /> } />
+        <Route path="/my-account" element={ <MyAccount/> } />
       </Routes>
     </Router>
   )

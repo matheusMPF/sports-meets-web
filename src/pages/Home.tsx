@@ -9,7 +9,7 @@ export const Home = () => {
 
             <Header />
 
-            <main className="flex flex-wrap items-center justify-center gap-5">
+            <main className="w-full h-full flex flex-wrap items-center justify-center gap-5">
                 <Card />
                 <Card />
                 <Card />
