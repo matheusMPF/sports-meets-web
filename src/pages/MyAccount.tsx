@@ -6,7 +6,7 @@ export const MyAccount = () => {
     return (
         <div className="h-full w-full">
             <Header />
-            <section className="w-full h-full flex justify-center mt-6 mb-6">
+            <section className="w-full h-full flex justify-center mt-6 mb-3">
                 <div className="flex flex-col w-1/2 gap-3">
                     <div className="bg-background-200 rounded-xl flex flex-col py-4 px-10 gap-2">
                         <h2 className="text-xl font-semibold">Minha Conta</h2>
@@ -15,7 +15,7 @@ export const MyAccount = () => {
 
                         <UserSquare size="102" color="#fff" variant="Bulk" className="cursor-pointer hover:opacity-50"/>
 
-                        <div className="flex gap-8 items-center">
+                        <div className="flex gap-8">
                             <div>
                                 <h3>Matheus Magalhães</h3>
                                 <span className="text-sm text-zinc-600">id: 123</span>
