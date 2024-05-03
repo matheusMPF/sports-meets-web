@@ -3,6 +3,7 @@ import { MyAccountSettings } from "../components/MyAccountSettings"
 import { Header } from "../components/header/Header"
 
 export const MyAccount = () => {
+
     return (
         <div className="h-full w-full">
             <Header />
@@ -34,7 +35,7 @@ export const MyAccount = () => {
 
                     <MyAccountSettings to="/settings" icon={<Setting size="28" color="#3b82f6" variant="Bulk" />} titleSetting="Configurações" />
                     <MyAccountSettings to="/my-events" icon={<CalendarTick size="28" color="#3b82f6" variant="Bulk" />} titleSetting="Meus eventos" />
-                    <MyAccountSettings to="/my-reviewsO" icon={<Star1 size="28" color="#3b82f6" variant="Bulk" />} titleSetting="Minhas avaliações" />
+                    <MyAccountSettings to="/my-reviews" icon={<Star1 size="28" color="#3b82f6" variant="Bulk" />} titleSetting="Minhas avaliações" />
                     <MyAccountSettings to="/support" icon={<Headphone size="28" color="#3b82f6" variant="Bulk" />} titleSetting="Suporte" />
 
                 </div>

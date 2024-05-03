@@ -1,7 +1,7 @@
 export const EventRoom = () => {
     return (
-        <div>
-            <span>Sala do evento</span>
-        </div>
+        <section>
+            Tela de "Sala do evento"
+        </section>
     )
 }

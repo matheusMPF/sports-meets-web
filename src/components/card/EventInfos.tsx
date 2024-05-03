@@ -14,7 +14,7 @@ export function EventIcons({
             <div className="flex gap-1 text-sm items-center">
 
                 {iconInfos}
-                <span>{infos}</span>
+                <span className="text-zinc-300">{infos}</span>
 
             </div>
     )
