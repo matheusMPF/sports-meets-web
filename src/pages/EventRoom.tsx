@@ -2,6 +2,7 @@ import { ProfileCircle } from "iconsax-react"
 import { DescriptionEvent } from "../components/eventRoom/DescriptionEvent"
 import { NavRoutes } from "../components/ui/NavRoutes"
 import { Participants } from "../components/eventRoom/Participants"
+import { MuralMensage } from "../components/eventRoom/MuralMensage"
 
 export const EventRoom = () => {
 
@@ -12,8 +13,13 @@ export const EventRoom = () => {
                 <NavRoutes to="/" routerName="Sala do Evento" />
                 <DescriptionEvent />
 
-                <div className="card flex w-full gap-8 bg-background-200 p-6 rounded-lg ">
-                    <h3>Mural</h3>
+                <div className="card flex flex-col w-full gap-8 bg-background-200 p-6 rounded-lg ">
+                    <h3 className="text-lg">Mural</h3>
+
+                    <MuralMensage mensage="Olá Galera, não esqueçam de levar suas próprias águas em nosso evento." />
+                    <MuralMensage mensage="Gente, Tudo certo? Espero que sim. Só um breve aviso, está havendo obras em alguns pontos do nosso circuito, por isso vamos mudar um pouco a rota. Para mais dúvidas, falar através do WhatsApp" />
+                    <MuralMensage mensage="Bem-vindos ao melhor evento de ciclismo!" />
+
                 </div>
 
                 <div className="card flex flex-col w-full gap-8 bg-background-200 p-6 rounded-lg">
