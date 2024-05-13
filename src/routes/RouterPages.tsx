@@ -7,6 +7,8 @@ import { MyEvents } from "../pages/MyEvents"
 import { MyReviews } from "../pages/MyReviews"
 import { Settings } from "../pages/Settings"
 import { Support } from "../pages/Support"
+import { Signin } from "../pages/Signin"
+import { Signup } from "../pages/Signup"
 
 export default function RouterPages(){
 
@@ -21,10 +23,11 @@ export default function RouterPages(){
         <Route path="/my-reviews" element={ <MyReviews/> } />
         <Route path="/settings" element={ <Settings/> } />
         <Route path="/support" element={ <Support/> } />
-
+        <Route path="/signin" element={ <Signin/> } />
+        <Route path="/signup" element={ <Signup/> } />
       </Routes>
     </Router>
 
-    // Tu e corno matheusz
+     
   )
 }
