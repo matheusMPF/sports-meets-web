@@ -10,7 +10,7 @@ export function ButtonSm ({
 }:ButtonSmProps){
     return(
     <button {...props}
-        className="bg-blue-500 px-10 py-1 rounded-md hover:bg-blue-500/50 transition-all">
+        className="bg-main-100 px-10 py-1 rounded-md hover:bg-main-100/50 transition-all">
         {children}
     </button>
     )

@@ -1,5 +1,4 @@
 import { ArrowLeft2 } from "iconsax-react"
-import { ReactNode } from "react"
 import { Link } from "react-router-dom"
 
 interface NavRoutesProps {

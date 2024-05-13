@@ -10,6 +10,7 @@ export default {
         'main-100': '#3b82f6',
         'background-100': '#27272a',
         'background-200': '#18181b',
+        'red': '#CD0000'
   
       }
     },

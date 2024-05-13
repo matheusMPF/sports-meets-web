@@ -15,14 +15,14 @@ export const BaseInput = ({
 
 }: BaseInputProps) => {
     return(
-        <div className="flex flex-col gap-1 w-1/3">
+        <div className="flex flex-col gap-1">
             <label>{label}</label>
 
             <div className="flex justify-between gap-2 p-4 border border-blue-500 rounded-3xl shadow-2xl items-center">
                 {startDecoration}
                 <input
                 {...props}
-                className="outline-none  bg-transparent w-full" />
+                className="outline-none bg-transparent w-full" />
                 {endDecoration}
             </div>
 
