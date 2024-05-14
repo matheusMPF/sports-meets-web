@@ -1,4 +1,5 @@
 import { Call, Edit, Sms, UserSquare, Whatsapp } from "iconsax-react"
+import { Link } from "react-router-dom"
 
 
 
@@ -6,8 +7,8 @@ export const HeaderMyAccount = () => {
     return (
         <div className="bg-background-200 rounded-xl py-4 px-10 gap-2 flex justify-between items-center">
 
-            <div className="flex gap-4 ">
-                <UserSquare size="102" color="#fff" variant="Bulk" className="cursor-pointer hover:opacity-50" />
+            <div className="flex items-center gap-4 ">
+                <UserSquare size="92" color="#fff" variant="Bulk" className="cursor-pointer hover:opacity-50" />
 
                 <div className="flex flex-col gap-3 flex-wrap">
 
@@ -29,21 +30,18 @@ export const HeaderMyAccount = () => {
                         <div className="flex flex-col text-zinc-300">
 
                             <span>
-                                <Whatsapp
-                                    size="20"
-                                    color="#3b82f6"
-                                    variant="Bulk"
-                                    className="hover:opacity-50 cursor-pointer" />
+                                <Link to='https://wa.me/81987323313'>
+                                    <Whatsapp
+                                        size="20"
+                                        color="#3b82f6"
+                                        variant="Bulk"
+                                        className="hover:opacity-50 cursor-pointer"
+                                    />
+                                </Link>
+
                             </span>
                             <span>
                                 <Sms
-                                    size="20"
-                                    color="#3b82f6"
-                                    variant="Bulk"
-                                    className="hover:opacity-50 cursor-pointer" />
-                            </span>
-                            <span>
-                                <Call
                                     size="20"
                                     color="#3b82f6"
                                     variant="Bulk"

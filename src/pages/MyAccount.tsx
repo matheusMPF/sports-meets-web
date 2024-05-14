@@ -2,18 +2,16 @@ import { CalendarTick, Headphone, Setting, Star1 } from "iconsax-react"
 import { MyAccountRoutes } from "../components/myAccount/MyAccountRoutes"
 import { Header } from "../components/header/Header"
 import { HeaderMyAccount } from "../components/myAccount/HeaderMyAccount"
+import { NavRoutes } from "../components/ui/NavRoutes"
 
 export const MyAccount = () => {
 
     return (
         <div className="h-full w-full">
-            <Header />
             <section className="w-full h-full flex justify-center mt-6 mb-3">
-                <div className="flex flex-col w-1/2 gap-3">
+                <div className="flex flex-col w-1/2 gap-4">
 
-                    <div className="bg-background-200 rounded-xl flex flex-col py-4 px-10 gap-2">
-                        <h2 className="text-xl font-semibold">Minha Conta</h2>
-                    </div>
+                    <NavRoutes routerName="Minha Conta" to="/" />
 
                     <HeaderMyAccount />
 

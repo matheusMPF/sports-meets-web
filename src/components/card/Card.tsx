@@ -78,7 +78,7 @@ export const Card = () => {
                     &&
                     <Modal
                         linkTo="/event-room"
-                        title="Informe o Código"
+                        title="Informe a Senha"
                         nameButton="Validar"
                         onClose={() => setShowModal(false)} />
                 }

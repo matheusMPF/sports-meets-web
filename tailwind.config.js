@@ -11,7 +11,6 @@ export default {
         'background-100': '#27272a',
         'background-200': '#18181b',
         'red': '#CD0000'
-  
       }
     },
     
