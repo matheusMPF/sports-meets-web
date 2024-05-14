@@ -31,7 +31,7 @@ export const Modal = ({
 
                 </div>
 
-                <BaseInput placeholder="Digite o código" />
+                <BaseInput placeholder="Digite a senha" />
 
                 <div className="flex justify-end">
                     {linkTo ? 

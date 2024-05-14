@@ -9,6 +9,7 @@ import { Settings } from "../pages/Settings"
 import { Support } from "../pages/Support"
 import { Signin } from "../pages/Signin"
 import { Signup } from "../pages/Signup"
+import { NotFound } from "../pages/Warning/NotFound"
 
 export default function RouterPages(){
 
@@ -25,6 +26,9 @@ export default function RouterPages(){
         <Route path="/support" element={ <Support/> } />
         <Route path="/signin" element={ <Signin/> } />
         <Route path="/signup" element={ <Signup/> } />
+        <Route path="*" element={ <NotFound/> } />
+
+        
       </Routes>
     </Router>
 
