@@ -25,15 +25,15 @@ export const EventRoom = () => {
                 <div className="card flex flex-col w-full gap-8 bg-background-200 p-6 rounded-lg">
                     <h5 className="text-lg">Participantes</h5>
 
-                    <Participants id="123" participantName="Matheus Magalhães" />
-                    <Participants id="124" participantName="Jupipi" />
-                    <Participants id="125" participantName="Sanzinho Dino Gamer" />
-                    <Participants id="126" participantName="Victor Teixeira" />
-                    <Participants id="127" participantName="Marcos Antônio" />
-                    <Participants id="128" participantName="Hellen Barreto" />
-                    <Participants id="129" participantName="Madu" />
-                    <Participants id="130" participantName="Luizinho" />
-                    <Participants id="131" participantName="Jorge Denys" />
+                    <Participants id="123" participantName="Matheus Magalhães" admin={true} />
+                    <Participants id="124" participantName="Jupipi" admin={false} />
+                    <Participants id="125" participantName="Sanzinho Dino Gamer" admin={false} />
+                    <Participants id="126" participantName="Victor Teixeira" admin={false} />
+                    <Participants id="127" participantName="Marcos Antônio" admin={false} />
+                    <Participants id="128" participantName="Hellen Barreto" admin={false} />
+                    <Participants id="129" participantName="Madu" admin={false} />
+                    <Participants id="130" participantName="Luizinho" admin={false} />
+                    <Participants id="131" participantName="Jorge Denys" admin={false} />
 
                 </div>
 
