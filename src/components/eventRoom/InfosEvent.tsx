@@ -7,7 +7,7 @@ export const InfosEvents = () => {
     const [privateRoom, setPrivateRoom] = useState(false)
 
     return (
-        <div className="flex flex-col rounded-lg text-wrap gap-4a">
+        <div className="flex flex-col rounded-lg text-wrap gap-2">
 
             <IconInfo infos="Av. Boa Viagem, 1998 - Boa Viagem, Recife - PE" iconInfos={<Location size="20" color="#3b82f6" variant="Bulk" />}
             />

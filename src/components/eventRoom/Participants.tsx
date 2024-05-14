@@ -1,17 +1,16 @@
 import { ProfileCircle } from "iconsax-react"
-import { useState } from "react"
 
 interface ParticipantsProps{
     participantName: string,
-    id: string
+    id: string,
+    admin: boolean,
 }
 
 export const Participants = ({
     participantName,
-    id
+    id,
+    admin,
 }: ParticipantsProps) => {
-
-    const [admin, setAdmin] = useState(false)
 
     return (
         <div className="flex items-center justify-between">
@@ -25,7 +24,7 @@ export const Participants = ({
 
             </div>
             <div>
-                <span className="text-main-100">{admin ? 'Admin' : ""}</span>
+                <span className="text-main-100" >{admin ? 'Admin' : ""}</span>
             </div>
 
         </div>

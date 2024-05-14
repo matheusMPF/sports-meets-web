@@ -63,9 +63,8 @@ export const Card = () => {
                     </p>
                 </div>
 
-                <div className="footer-card flex justify-around">
-                    <span>Valor: Gratuito</span>
-
+                <div className="footer-card flex justify-end px-8">
+                
                     <Link to={privateRoom ? '#' : "/event-room"}>
 
                         <ButtonSm onClick={() => { privateRoom && setShowModal(true) }}>
