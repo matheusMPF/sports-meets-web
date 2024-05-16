@@ -13,7 +13,7 @@ export function ButtonSm({
   ...props
 }: ButtonSmProps) {
   return (
-      <button {...props} className="bg-main-100 rounded-md hover:bg-main-100/50 transition-all flex py-1 px-8">
+      <button {...props} className="bg-main-100 justify-center rounded-md hover:bg-main-100/50 transition-all flex py-1 px-8">
         <div className="flex items-center gap-4">{startIcon}{children}{endIcon}</div>
       </button>
   );

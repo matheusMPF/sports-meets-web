@@ -13,7 +13,7 @@ export const BaseTextarea = ({
 }: BaseTextareaProps) => {
     return(
         <div className="flex flex-col gap-1">
-            <label>{label}</label>
+            <label className="text-lg font-medium">{label}</label>
 
             <div className="flex justify-between gap-2 p-4 border border-blue-500 rounded-3xl shadow-2xl items-center">
                 <textarea
