@@ -1,4 +1,4 @@
-import { Calendar, Clock, Global, Location, Lock1, People, User } from "iconsax-react";
+import { Calendar, Clock, Location, Lock1, People, User } from "iconsax-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal } from "../ui/Modal";
@@ -7,7 +7,7 @@ import { IconInfo } from "../ui/IconInfo";
 
 export const Card = () => {
 
-    const [privateRoom, setPrivateRoom] = useState(true)
+    const [privateRoom] = useState(true)
     const [showModal, setShowModal] = useState(false)
 
     return (

@@ -1,5 +1,5 @@
 import { CloseCircle } from "iconsax-react";
-import { BaseInput } from "./Input";
+import { BaseInput } from "./BaseInput";
 import { ButtonSm } from "./ButtonSm";
 import { Link } from "react-router-dom";
 
