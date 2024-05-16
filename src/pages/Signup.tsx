@@ -1,5 +1,5 @@
 import { ButtonSm } from "../components/ui/ButtonSm"
-import { BaseInput } from "../components/ui/Input"
+import { BaseInput } from "../components/ui/BaseInput"
 
 export const Signup = () => {
     return (

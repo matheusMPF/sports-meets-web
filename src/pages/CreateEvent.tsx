@@ -2,9 +2,10 @@ import { useState } from "react";
 import { BaseSelect } from "../components/ui/BaseSelect";
 import { ButtonSm } from "../components/ui/ButtonSm";
 import { ArrowCircleRight2 } from "iconsax-react";
+import { NavRoutes } from "../components/ui/NavRoutes";
+import { BaseTextarea } from "../components/ui/BaseTextarea";
 
 export const CreateEvents = () => {
-
   const [selectedValue, setSelectedValue] = useState<string>("");
 
   const sports = [
@@ -82,7 +83,10 @@ export const CreateEvents = () => {
   };
 
   return (
-    <section className="h-screen w-screen flex flex-col justify-center items-center">
+    <section className="h-full w-full flex flex-col justify-center items-center gap-4 my-8">
+      <div className="w-1/2">
+        <NavRoutes routerName="Criar Evento Esportivo" to="/" />
+      </div>
       <div className="bg-background-200 p-8 w-1/2 rounded-lg flex flex-col gap-8">
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="text-xl font-bold">Crie seu evento esportivo!</h1>
@@ -109,7 +113,11 @@ export const CreateEvents = () => {
               style={{ padding: "10px", fontSize: "16px" }}
               placeholder="Modalidade"
             />
+
+            <BaseTextarea placeholder="Fale um pouco mais sobre o seu evento esportivo." rows={4} label="Descrição do Evento" />
           </div>
+
+
           <div className="w-full flex justify-end">
             <ButtonSm
               endIcon={
