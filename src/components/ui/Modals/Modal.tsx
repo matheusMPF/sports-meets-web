@@ -1,6 +1,6 @@
 import { CloseCircle } from "iconsax-react";
-import { BaseInput } from "./BaseInput";
-import { ButtonSm } from "./ButtonSm";
+import { BaseInput } from "../BaseInput";
+import { ButtonSm } from "../ButtonSm";
 import { Link } from "react-router-dom";
 
 interface ModalProps {

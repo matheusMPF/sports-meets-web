@@ -1,7 +1,7 @@
 import { Calendar, Clock, Location, Lock1, People, User } from "iconsax-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Modal } from "../ui/Modal";
+import { Modal } from "../ui/Modals/Modal";
 import { ButtonSm } from "../ui/ButtonSm";
 import { IconInfo } from "../ui/IconInfo";
 

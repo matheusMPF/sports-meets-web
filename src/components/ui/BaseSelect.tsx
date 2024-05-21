@@ -13,6 +13,7 @@ interface SelectProps {
   style?: React.CSSProperties;
   placeholder?: string;
   label?: string;
+  disabled?: boolean
 }
 
 export const BaseSelect: React.FC<SelectProps> = ({
@@ -22,6 +23,7 @@ export const BaseSelect: React.FC<SelectProps> = ({
   style,
   placeholder,
   label,
+  disabled,
 }) => {
   const [showOptions, setShowOptions] = useState(true);
 
@@ -30,6 +32,7 @@ export const BaseSelect: React.FC<SelectProps> = ({
       <label className="text-lg font-medium">{label}</label>
       <div className="border border-main-100 rounded-3xl flex items-center px-4">
         <select
+          disabled={disabled}
           value={value}
           onChange={onChange}
           style={style}
