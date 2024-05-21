@@ -1,6 +1,5 @@
 import { CalendarTick, Headphone, Setting, Star1 } from "iconsax-react"
 import { MyAccountRoutes } from "../components/myAccount/MyAccountRoutes"
-import { Header } from "../components/header/Header"
 import { HeaderMyAccount } from "../components/myAccount/HeaderMyAccount"
 import { NavRoutes } from "../components/ui/NavRoutes"
 

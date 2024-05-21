@@ -1,4 +1,4 @@
-import { Call, Edit, Sms, UserSquare, Whatsapp } from "iconsax-react"
+import {  Edit, Sms, UserSquare, Whatsapp } from "iconsax-react"
 import { Link } from "react-router-dom"
 
 

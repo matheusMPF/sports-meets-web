@@ -1,4 +1,3 @@
-import { ProfileCircle } from "iconsax-react"
 import { DescriptionEvent } from "../components/eventRoom/DescriptionEvent"
 import { NavRoutes } from "../components/ui/NavRoutes"
 import { Participants } from "../components/eventRoom/Participants"

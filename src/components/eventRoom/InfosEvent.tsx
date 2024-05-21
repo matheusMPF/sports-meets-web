@@ -4,7 +4,7 @@ import { useState } from "react"
 
 export const InfosEvents = () => {
 
-    const [privateRoom, setPrivateRoom] = useState(false)
+    const [privateRoom] = useState(false)
 
     return (
         <div className="flex flex-col rounded-lg text-wrap gap-2">
