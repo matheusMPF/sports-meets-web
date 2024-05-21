@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   base: '/sports-meets-web/',
   build: {
-    outDir: 'docs'
+    outDir: '/(root)'
   },
   plugins: [react()],
 });
