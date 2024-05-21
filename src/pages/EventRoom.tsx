@@ -9,7 +9,7 @@ export const EventRoom = () => {
         <section className="w-full h-full flex flex-col items-center justify-center ">
             <div className="flex flex-col items-center justify-center gap-8 my-8 w-1/2 h-full">
 
-                <NavRoutes to="sports-meets-web/" routerName="Sala do Evento" />
+                <NavRoutes to="/sports-meets-web" routerName="Sala do Evento" />
                 <DescriptionEvent />
 
                 <div className="card flex flex-col w-full gap-8 bg-background-200 p-6 rounded-lg ">
