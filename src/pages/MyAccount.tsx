@@ -10,7 +10,7 @@ export const MyAccount = () => {
             <section className="w-full h-full flex justify-center mt-6 mb-3">
                 <div className="flex flex-col w-1/2 gap-4">
 
-                    <NavRoutes routerName="Minha Conta" to="/" />
+                    <NavRoutes routerName="Minha Conta" to="sports-meets-web/" />
 
                     <HeaderMyAccount />
 

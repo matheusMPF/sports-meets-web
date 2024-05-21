@@ -16,7 +16,7 @@ export const NotFound = () => {
                 <ul>
                     <li className="flex gap-2">
                         <span>1. Voltar a tela de Início.</span>
-                        <Link to='/' className="text-main-100 hover:text-main-100/50" >Tela Inicial</Link>
+                        <Link to='sports-meets-web/' className="text-main-100 hover:text-main-100/50" >Tela Inicial</Link>
                     </li>
                     <li className="flex gap-2">
                         <span>2. Verifique sua conexão de internet.</span>
