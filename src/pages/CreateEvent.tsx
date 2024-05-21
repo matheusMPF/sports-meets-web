@@ -85,7 +85,7 @@ export const CreateEvents = () => {
   return (
     <section className="h-full w-full flex flex-col justify-center items-center gap-4 my-8">
       <div className="w-1/2">
-        <NavRoutes routerName="Criar Evento Esportivo" to="/" />
+        <NavRoutes routerName="Criar Evento Esportivo" to="sports-meets-web/" />
       </div>
       <div className="bg-background-200 p-8 w-1/2 rounded-lg flex flex-col gap-8">
         <div className="flex flex-col items-center justify-center gap-4">
