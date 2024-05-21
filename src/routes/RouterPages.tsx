@@ -16,7 +16,7 @@ export default function RouterPages(){
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="sports-meets-web/" element={<Home/>} />
         <Route path="/create-event" element={ <CreateEvents/> } />
         <Route path="/event-room" element={ <EventRoom /> } />
         <Route path="/my-account" element={ <MyAccount/> } />
