@@ -112,13 +112,18 @@ export const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
   return (
     <div className="bg-background-200 p-8 w-1/2 rounded-lg flex flex-col gap-8">
       <div className="flex flex-col items-center justify-center gap-4">
+
         <h1 className="text-xl font-bold">Crie seu evento esportivo!</h1>
+
         <span className="font-semibold text-lg">Passo 1:</span>
+
         <p className="text-zinc-300 w-[90%] text-sm text-center">
           Precisamos que você preencha algumas informações sobre seu evento
           esportivo. Para uma melhor experiência para todos!
         </p>
+
       </div>
+      
       <form className="flex flex-col gap-8 items-center">
         <div className=" w-2/3 flex flex-col gap-4">
           <BaseSelect
