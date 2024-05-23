@@ -28,3 +28,5 @@ export function MyAccountSettings({
         </Link>
     )
 }
+
+//Fiz uma alteração aqui
