@@ -18,7 +18,7 @@ export const BaseInput = ({
         <div className="flex flex-col gap-1">
             <label>{label}</label>
 
-            <div className="flex justify-between gap-2 p-4 border border-blue-500 rounded-3xl shadow-2xl items-center">
+            <div className="flex justify-between gap-2 p-3 border border-blue-500 rounded-3xl shadow-2xl items-center">
                 {startDecoration}
                 <input
                 {...props}

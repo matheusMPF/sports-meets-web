@@ -115,8 +115,6 @@ export const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
 
         <h1 className="text-xl font-bold">Crie seu evento esportivo!</h1>
 
-        <span className="font-semibold text-lg">Passo 1:</span>
-
         <p className="text-zinc-300 w-[90%] text-sm text-center">
           Precisamos que você preencha algumas informações sobre seu evento
           esportivo. Para uma melhor experiência para todos!
@@ -127,11 +125,11 @@ export const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
       <form className="flex flex-col gap-8 items-center">
         <div className=" w-2/3 flex flex-col gap-4">
           <BaseSelect
+            
             label="Informe o Esporte"
             options={sports}
             value={selectedSport}
             onChange={handleSportChange}
-            style={{ padding: "10px", fontSize: "16px" }}
             placeholder="Esporte"
           />
           <BaseSelect
@@ -139,7 +137,6 @@ export const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
             options={filteredModalities}
             value={selectedModality}
             onChange={handleModalityChange}
-            style={{ padding: "10px", fontSize: "16px" }}
             placeholder="Modalidade"
             disabled={!selectedSport}
           />
@@ -151,7 +148,7 @@ export const Step1: React.FC<Step1Props> = ({ onNextStep }) => {
         </div>
         <div className="w-full flex justify-end">
           <ButtonSm
-          onClick={nextStep}
+           onClick={nextStep}
             type="button"
             endIcon={<ArrowCircleRight2 size="26" color="#fff" variant="Bulk" />}
           >

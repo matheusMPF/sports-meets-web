@@ -8,12 +8,13 @@ interface Option {
 
 interface SelectProps {
   options: Option[];
-  value: string;
-  onChange: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+  value?: string;
+  onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
   style?: React.CSSProperties;
   placeholder?: string;
   label?: string;
-  disabled?: boolean
+  disabled?: boolean;
+  defaultValue?: string;
 }
 
 export const BaseSelect: React.FC<SelectProps> = ({
@@ -24,14 +25,16 @@ export const BaseSelect: React.FC<SelectProps> = ({
   placeholder,
   label,
   disabled,
+  defaultValue,
 }) => {
-  const [showOptions, setShowOptions] = useState(true);
+  const [showOptions, setShowOptions] = useState(false);
 
   return (
     <div className="flex flex-col gap-2">
       <label className="text-lg font-medium">{label}</label>
-      <div className="border border-main-100 rounded-3xl flex items-center px-4">
+      <div className="border border-main-100 rounded-3xl flex items-center px-4 relative">
         <select
+          defaultValue={defaultValue}
           disabled={disabled}
           value={value}
           onChange={onChange}
@@ -39,7 +42,7 @@ export const BaseSelect: React.FC<SelectProps> = ({
           onClick={() => {
             setShowOptions(!showOptions);
           }}
-          className="bg-transparent appearance-none w-full outline-none cursor-pointer"
+          className="bg-transparent appearance-none w-full outline-none cursor-pointer p-3"
         >
           {placeholder && (
             <option value="" disabled>
@@ -57,11 +60,13 @@ export const BaseSelect: React.FC<SelectProps> = ({
           ))}
         </select>
 
-        {showOptions ? (
-          <ArrowRight2 size="32" color="#3b82f6" />
-        ) : (
-          <ArrowDown2 size="32" color="#3b82f6" />
-        )}
+        <div className="absolute right-4 pointer-events-none">
+          {showOptions ? (
+            <ArrowDown2 size="32" color="#3b82f6" />
+          ) : (
+            <ArrowRight2 size="32" color="#3b82f6" />
+          )}
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Step1 } from "../components/createEvent/Step1";
 import { NavRoutes } from "../components/ui/NavRoutes";
 import { Step2 } from "../components/createEvent/Step2";
+import { Step3 } from "../components/createEvent/Step3";
 
 export const CreateEvent = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -18,7 +19,9 @@ export const CreateEvent = () => {
 
       {currentStep === 1 && <Step1 onNextStep={nextStep} />}
 
-      {currentStep === 2 && <Step2 />}
+      {currentStep === 2 && <Step2 onNextStep={nextStep} />}
+
+      {currentStep === 3 && <Step3 />}
     </section>
   );
 };
