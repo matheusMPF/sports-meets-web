@@ -10,8 +10,8 @@ export const SearchEvents = () => {
                 <input type="text" placeholder="Buscar evento" className="bg-transparent outline-none" />
             </div>
 
-            <div className="hover:text-white/10 cursor-pointer flex items-center justify-center">
-                <Filter size="24" variant="Bulk" className="hover:text-zinc-600 transition-all" />
+            <div>
+                <Filter size="24" variant="Bulk" />
             </div>
 
         </div>
