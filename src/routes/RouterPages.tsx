@@ -25,8 +25,8 @@ export default function RouterPages(){
         <Route path="/my-reviews" element={ <MyReviews/> } />
         <Route path="/settings" element={ <Settings/> } />
         <Route path="/support" element={ <Support/> } />
-        <Route path="/signin" element={ <Signin/> } />
-        <Route path="/signup" element={ <Signup/> } />
+        <Route path="/sports-meets-web/signin" element={ <Signin/> } />
+        <Route path="/sports-meets-web/signup" element={ <Signup/> } />
         <Route path="*" element={ <NotFound/> } />
 
         
