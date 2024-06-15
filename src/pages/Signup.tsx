@@ -9,22 +9,23 @@ export const Signup = () => {
         <h1 className="text-lg font-bold">Cadastre-se</h1>
 
         <form className="flex flex-col gap-4">
-          <BaseInput placeholder="E-mail" />
+          <BaseInput required type="email" placeholder="E-mail" />
 
-          <BaseInput placeholder="Senha" type="password" />
+          <BaseInput required placeholder="Senha" type="password" />
 
-          <BaseInput placeholder="Confirmar senha" type="password" />
-
-          <ButtonSm>Cadastrar</ButtonSm>
-
-          <div className="">
-            <p>
-              Já possui uma conta?{" "}
-              <Link to="/sports-meets-web/signin" className="text-main-100 cursor-pointer">
-                Logar
-              </Link>
-            </p>
-          </div>
+          <BaseInput required placeholder="Confirmar senha" type="password" />
+          <p>
+            Já possui uma conta?
+            <Link
+              to="/sports-meets-web/signin"
+              className="text-main-100 cursor-pointer"
+            >
+              Logar
+            </Link>
+          </p>
+          <Link to="/home" className="w-full flex justify-end">
+            <ButtonSm type="submit">Cadastrar</ButtonSm>
+          </Link>
         </form>
       </div>
     </div>

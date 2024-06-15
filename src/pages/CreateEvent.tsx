@@ -14,7 +14,7 @@ export const CreateEvent = () => {
   return (
     <section className="h-full w-full flex flex-col justify-center items-center gap-4 my-8">
       <div className="w-1/2">
-        <NavRoutes routerName="Criar Evento Esportivo" to="/sports-meets-web" />
+        <NavRoutes routerName="Criar Evento Esportivo" to="/home" />
       </div>
 
       {currentStep === 1 && <Step1 onNextStep={nextStep} />}

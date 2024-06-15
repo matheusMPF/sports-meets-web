@@ -17,7 +17,7 @@ export default function RouterPages(){
   return (
     <Router>
       <Routes>
-        <Route path="/sports-meets-web" element={<Home/>} />
+        <Route path="/home" element={<Home/>} />
         <Route path="/create-event" element={ <CreateEvent/> } />
         <Route path="/event-room" element={ <EventRoom /> } />
         <Route path="/my-account" element={ <MyAccount/> } />
@@ -26,7 +26,7 @@ export default function RouterPages(){
         <Route path="/settings" element={ <Settings/> } />
         <Route path="/support" element={ <Support/> } />
         <Route path="/sports-meets-web/signin" element={ <Signin/> } />
-        <Route path="/sports-meets-web/signup" element={ <Signup/> } />
+        <Route path="/sports-meets-web" element={ <Signup/> } />
         <Route path="*" element={ <NotFound/> } />
 
         

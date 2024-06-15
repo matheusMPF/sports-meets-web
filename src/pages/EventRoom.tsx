@@ -9,7 +9,7 @@ export const EventRoom = () => {
         <section className="w-full h-full flex flex-col items-center justify-center ">
             <div className="flex flex-col items-center justify-center gap-8 my-8 w-1/2 h-full">
 
-                <NavRoutes to="/sports-meets-web" routerName="Sala do Evento" />
+                <NavRoutes to="/home" routerName="Sala do Evento" />
                 <DescriptionEvent />
 
                 <div className="card flex flex-col w-full gap-8 bg-background-200 p-6 rounded-lg ">
@@ -25,11 +25,11 @@ export const EventRoom = () => {
                     <h5 className="text-lg">Participantes</h5>
 
                     <Participants id="123" participantName="Matheus Magalhães" admin={true} />
-                    <Participants id="124" participantName="Jupipi" admin={false} />
                     <Participants id="125" participantName="Sanzinho Dino Gamer" admin={false} />
                     <Participants id="126" participantName="Victor Teixeira" admin={false} />
                     <Participants id="127" participantName="Marcos Antônio" admin={false} />
                     <Participants id="128" participantName="Hellen Barreto" admin={false} />
+                    <Participants id="128" participantName="Herivelton" admin={false} />
                     <Participants id="129" participantName="Madu" admin={false} />
                     <Participants id="130" participantName="Luizinho" admin={false} />
                     <Participants id="131" participantName="Jorge Denys" admin={false} />
